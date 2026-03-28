@@ -1,0 +1,56 @@
+{% extends "sfosapp/base.html" %}
+{% load static %}
+
+{% block title %}ホーム{% endblock title %}
+
+{% block extra_style %}
+<link rel="preload" href="{% static 'sfosapp/css/index.css' %}" as="style">
+<link rel="stylesheet" href="{% static 'sfosapp/css/index.css' %}">
+{% endblock extra_style %}
+
+{% block sidebar %}
+    <a class="s-theme s-info">
+        <span class="material-symbols-rounded">info</span>
+    </a>
+{% endblock sidebar %}
+{% block content %}
+<section class="score">
+    <h2>現在の得点</h2>
+    <p class="section_description">各団クリックで詳細を表示</p>
+    <div class="flexbox">
+        <div class="team_score back_red">
+            <span><span class="large_N">241.<span class="large_D">08</span><span style="margin-left: .5rem;">点</span>
+        </div>
+        <div class="team_score back_blue">
+            <span><span class="large_N">250.<span class="large_D">42</span><span style="margin-left: .5rem;">点</span>
+        </div>
+        <div class="team_score back_yellow">
+            <span><span class="large_N">192.<span class="large_D">35</span><span style="margin-left: .5rem;">点</span>
+        </div>
+    </div>
+</section>
+<section class="w_uf">
+    <div class="to_member_changes_confirmations">
+        <h2>メンバー変更</h2>
+        <div class="to_member_changes">
+            <a class="basic_2">メンバー確認へ</a>
+            <a class="basic_2">メンバー変更へ</a>
+        </div>
+    </div>
+    <div class="to_input_setting">
+        <h2>各種入力 / 設定メニュー</h2>
+        <div class="flexbox">
+            <div class="to_input">
+                <a class="basic_3">結果入力 A</a>
+                <a class="basic_3">結果入力 B</a>
+            </div>
+            <div class="to_setting">
+                <a class="basic_3">競技設定</a>
+                <a class="basic_3">応援団設定</a>
+                <a class="basic_3">得点設定</a>
+                <a class="basic_3">メンバー設定</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

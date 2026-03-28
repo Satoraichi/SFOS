@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+.s-info {
+    margin-top: 3rem;
+}
+
+section.score {
+    width: 100%;
+    margin: 0;
+    padding: 1.5em;
+    background-color: #e67ca122;
+}
+
+section.score h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+section.score div.flexbox {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.team_score {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    border-radius: 1.5rem;
+    corner-shape: superellipse(1.4);
+    transition: all .3s;
+    box-shadow: 0 2px 10px #00000044;
+    color: #ffffff;
+}
+
+    .team_score:hover {
+        transform: scale(1.02);
+        box-shadow: 0 2px 10px #00000088;
+    }
+
+.back_red {
+    background-color: #822f2c;
+}
+
+   .back_red:hover {
+        background-color: #bc3733;
+    } 
+
+.back_blue {
+    background-color: #2e5581;
+}
+
+    .back_blue:hover {
+        background-color: #2d6ab1;
+    }
+
+.back_yellow {
+    background-color: #937d2b;
+}
+
+    .back_yellow:hover {
+        background-color: #ab8f2a;
+    }
+
+.team_score span {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-family: var(--title-font);
+}
+
+.team_score span span.large_N {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: var(--alphanumeric-font);
+}
+
+.team_score span span.large_D {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: var(--alphanumeric-font);
+}
+
+section.w_uf {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.to_member_changes_confirmations {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    align-items: center;
+    flex-grow: 1;
+    border-radius: 1.5rem;
+    corner-shape: superellipse(1.4);
+    transition: all .3s;
+    box-shadow: 0 2px 10px #00000044;
+    background-color: #eff7ff;
+}
+
+.to_member_changes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.to_member_changes_confirmations h2,
+.to_input_setting h2 {
+    font-size: 2rem;
+}
+
+.to_input_setting {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    align-items: center;
+    flex-grow: 2;
+    border-radius: 1.5rem;
+    corner-shape: superellipse(1.4);
+    transition: all .3s;
+    box-shadow: 0 2px 10px #00000044;
+    background-color: #fffbef;
+}
+
+.to_input_setting .flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.to_input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    padding: 1rem;
+    border-right: var(--accent-color3) solid .15rem;
+}
+
+.to_setting {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 1rem 1.5rem;
+    flex-grow: 1;
+    padding: 1rem;
+}
